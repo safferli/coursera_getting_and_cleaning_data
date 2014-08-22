@@ -17,5 +17,5 @@ This dataset is derived from the *Human Activity Recognition Using Smartphones D
     1. it then generates a dataframe called `selected_data` by only picking the activity and the subject column, as well as all columns which contain the words "mean" or "std", thus selecting only the means and standard deviations of the features
     1. the numeric activity factors are replaced by a descriptive string found in `UCI HAR Dataset/activity_labels.txt`
     1. finally, it creates a dataframe `means_data`, which consists of only the means of all features, grouped by each activity and subject
-    1. all aggregated variables have the string `means_of_` prefixed to the original variable name (e.g. "tBodyAcc-mean()-X" -> "means_of_tBodyAcc-mean()-X")
+    1. all aggregated variables have the string `mean_of_` prefixed to the original variable name (e.g. `tBodyAcc-mean()-X` -> `means_of_tBodyAcc-mean()-X`)
     1. the `means_data` data is stored as a file `tidy.txt` in your working directory
